@@ -1,7 +1,7 @@
 import { prisma } from "../config/prismaclient.js";
 import bcrypt from "bcrypt";
 
-export const newUsers = async(req, res){
+export const newUsers = async(req, res)=>{
      const { name, lastname, email, password, role } = req.body;
 
      try {
